@@ -4,7 +4,7 @@
 https://github.com/JP0703/Programming-For-Visual-Arts-Project
 
 ## Description
-A game where the goal is to survive as long as possible as more obstacles spawn.
+A survival game where the goal is to survive as long as possible as more obstacles spawn. Players spawn into an arena that's over a pit of lava. The obstacles are fireballs, spikes, crushers, and the lava pit below. They move with wasd or arrow keys to move in a 2D space from a topdown view.
 
 ## Features
 - Difficulty Progression
