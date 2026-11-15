@@ -5,11 +5,13 @@ class Spike():
     """Spawns from the sides of the arena horizontally, stays for a few seconds, and leaves. Before it comes onto screen,
     a red flashing particle appears where it spawns. More spawn at a time the higher the difficulty number."""
     def __init__(self):
+        # Defines position, color, and speed
         pass
 
 class Fireball():
     """Spawns from anywhere and moves in a straight line. Speeds up the higher the difficulty number."""
     def __init__(self):
+        # Defines position, size of the fireballs, color, shape, and speed
         pass
 
 class Crusher():
@@ -17,12 +19,14 @@ class Crusher():
     be passed when down. Dissappears after some time, allowing the player to move into that area. Spawns more the higher the
     difficulty number"""
     def __init__(self):
+        # Defines position, size, color, and speed
         pass
 
 class LavaPit():
     """Spawns after a certain time around the arena, making it smaller. Only a certain amount of area is effected by the lava,
     so the player can actually play. If the players goes over it, they fall and die."""
     def __init__(self):
+        # Defines size and color
         pass
 
 def main():
