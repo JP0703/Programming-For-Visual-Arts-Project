@@ -24,4 +24,17 @@ class LavaPit():
     so the player can actually play. If the players goes over it, they fall and die."""
     def __init__(self):
         pass
-    
+
+def main():
+    pygame.init()
+    resolution = (800, 600)
+    screen = pygame.display.set_mode(resolution)
+    pygame.display.set_caption("Pit of Trials Game")
+    clock = pygame.time.Clock()
+    dt = 0
+
+    running = True
+    while running:
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                running = False
