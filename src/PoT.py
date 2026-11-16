@@ -6,13 +6,19 @@ class Spike():
     a red flashing particle appears where it spawns. More spawn at a time the higher the difficulty number."""
     def __init__(self):
         # Defines position, color, and speed
-        pass
+        self.pos = position
+        self.color = color
+        self.speed = speed
 
 class Fireball():
     """Spawns from anywhere and moves in a straight line. Speeds up the higher the difficulty number."""
     def __init__(self):
         # Defines position, size of the fireballs, color, shape, and speed
-        pass
+        self.pos = position
+        self.size = size
+        self.color = color
+        self.shape = shape
+        self.speed = speed
 
 class Crusher():
     """Spawns in a random area, killing the player if landed above them. The area flashes red before coming down, and cannot
@@ -20,14 +26,18 @@ class Crusher():
     difficulty number"""
     def __init__(self):
         # Defines position, size, color, and speed
-        pass
+        self.pos = position
+        self.size = size
+        self.color = color
+        self.speed = speed
 
 class LavaPit():
     """Spawns after a certain time around the arena, making it smaller. Only a certain amount of area is effected by the lava,
     so the player can actually play. If the players goes over it, they fall and die."""
     def __init__(self):
         # Defines size and color
-        pass
+        self.size = size
+        self.color = color
 
 def main():
     pygame.init()
