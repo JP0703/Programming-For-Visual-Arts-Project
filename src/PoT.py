@@ -52,10 +52,9 @@ class PlayerHitbox():
 class Arena():
     """The arena is the background of the game and where the player spawns. They start in the middle, over a lava pit. The edges of the arena turn 
     into lava pits, making the area smaller."""
-    def __init__(self):
-        # define size, screen, and color 
-        self.size
-        self.screen
+    def __init__(self, res_screen):
+        # define screen and color
+        self.screen = res_screen
         self.color
 
 def main():
@@ -65,9 +64,12 @@ def main():
     pygame.display.set_caption("Pit of Trials Game")
     clock = pygame.time.Clock()
     dt = 0
-
+    arena = Arena(resolution)
     running = True
     while running:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 running = False
+        
+        dt = clock.tick(30)
+    pygame.quit()
